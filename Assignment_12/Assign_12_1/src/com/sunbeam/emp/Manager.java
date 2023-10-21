@@ -23,7 +23,7 @@ public class Manager implements Emp{
 	}
 	@Override
 	public double getSal() {
-		return this.bs+this.da;
+		return (this.bs+this.da);
 	}
 	public double calcIncome() {
 		return 0.2*bs;

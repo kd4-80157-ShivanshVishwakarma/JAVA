@@ -26,12 +26,12 @@ public class Labor implements Emp{
 	}
 	@Override
 	public double getSal() {
-		// TODO Auto-generated method stub
-		return 0;
+		
+		return this.hrs*this.rate;
 	}
 	public double calcIncome() {
 		if(this.hrs>300) {
-			return 0.05*hrs*rate;
+			return 0.05*this.getSal();
 		}
 		return 0.0;
 	}
